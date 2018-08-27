@@ -1,5 +1,6 @@
 # ExceptionRecordManager
-PermissionManagerΪ�����࣬һ���ڼ̳�Application���Զ�������дonCreate()���������´��룺
+ExceptionRecordManager用来将发生且未被捕获的异常保存本地以方便在设备未接入时追踪BUG。
+PermissionManager为单例类，一般在继承Application的自定义类重写onCreate()，调用如下代码：
 ```java
 ExceptionRecordManager.init(this).start();
 ```
